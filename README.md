@@ -16,4 +16,4 @@ You will also see any lint errors in the console.
 
 In the top input field write fruit and press enter.<br />
 Unfortunately this is my first app in react so please have mercy :)<br />
-Total dev time is around 4 hours of coding. ...enjoy
+Total dev time is around 4 hours. ...enjoy
