@@ -1,0 +1,230 @@
+.app-holder {
+  background: #FFFFFF;
+  box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.devider hr {
+  background-color: rgba(0, 0, 0, 0.08);
+  border: 0px solid;
+  height: 1px;
+  margin: 0% 0% 0% 10%;
+}
+
+#translate-switch {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 50px;
+  padding: 0px;
+  margin: 0px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#translate-switch img {
+  width: 100%;
+  transition: 0.3s ease-out;
+}
+
+#translate-switch:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#translate-switch:hover>img {
+  transform: rotate(180deg);
+}
+
+
+/* INPUT HOLDERS */
+
+.input-holder {
+  min-height: 100px;
+  padding: 15px;
+}
+
+.language {
+  width: 37px;
+  height: 37px;
+  border-radius: 35px;
+  position: relative;
+  border: 1px solid #1998FF;
+  cursor: pointer;
+}
+
+.language::after {
+  content: "";
+  width: 11px;
+  position: absolute;
+  bottom: -8px;
+  height: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('./img/arrow-down.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.language:hover::after {
+  bottom: -12px;
+}
+
+.language img.selected {
+  width: 33px;
+  margin: 2px;
+}
+
+.choose-lang {
+  position: absolute;
+  z-index: 100;
+  top: 54px;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: none;
+}
+
+.choose-lang div {
+  display: flex;
+  padding: 15px 20px 15px 15px;
+  text-align: left;
+  cursor: pointer;
+  color: #DAE0E5;
+  transition: 0.3s;
+}
+
+.choose-lang div:hover {
+  color: #1998FF;
+}
+
+.choose-lang div span {
+  margin: auto;
+}
+
+
+.choose-lang img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.topPart {
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.topPart p {
+  height: 36px;
+  margin: auto 0 0 20px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #DAE0E5;
+  cursor: default;
+}
+
+.botPart{
+  width: 90%;
+  margin-left: 9%;
+  height: 50px;
+  position: relative;
+}
+
+.botPart input{
+  width: 100%;
+  border: none;
+  height: 50px;
+  color: #1998FF;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  outline: none;
+}
+
+.botPart p.result{
+  width: 100%;
+  border: none;
+  height: 50px;
+  color: #1998FF;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  outline: none;
+  margin: 0px;
+  display: inline-block;
+}
+
+.waiting{
+  position: absolute;
+  height: 50px;
+  bottom: 6px;
+}
+
+.waiting span{
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #DAE0E5;
+  display: inline-block;
+  margin: 00px 8px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.waiting span:first-of-type{
+  animation-name: jump;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.waiting span:nth-of-type(2){
+  animation-name: jump;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.2s;
+  left: 18px
+}
+
+.waiting span:nth-of-type(3){
+  animation-name: jump;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.4s;
+  left: 36px
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0px
+  }
+  20% {
+    bottom: 0px
+  }
+  50% {
+    bottom: 13px
+  }
+  100% {
+    bottom: 0px
+  }
+}
+

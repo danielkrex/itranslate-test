@@ -1,0 +1,16 @@
+
+
+body {
+  margin: 0;
+  font-family: 'SF UI Display', "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: #F2F5F7;
+}
+
+code {
+  font-family: 'SF UI Display', "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
